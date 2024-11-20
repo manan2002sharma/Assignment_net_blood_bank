@@ -28,6 +28,10 @@ These API provides functionalities for managing blood donor records using in mem
         * Non-positive age or quantity.
         * Empty donor name.
         * Invalid status value (not "Available", "Requested", or "Expired").
+   
+![ScreenShot](https://raw.github.com/manan2002sharma/Assignment_net_blood_bank/master/Assignment_net_blood_bank/ScreenShots/PostMan_AddBloodDataEndpoint_Post.png) 
+![ScreenShot](https://raw.github.com/manan2002sharma/Assignment_net_blood_bank/master/Assignment_net_blood_bank/ScreenShots/Swagger_AddBlooddataendpoint_Post.png)
+        
 <br>
 
 **2. Get All Blood Data**
@@ -38,6 +42,8 @@ These API provides functionalities for managing blood donor records using in mem
     * **200 OK:** Returns a list of all blood donor records.
     * **404 Not Found:** No blood donor records exist in the system.
     
+![ScreenShot](https://raw.github.com/manan2002sharma/Assignment_net_blood_bank/master/Assignment_net_blood_bank/ScreenShots/PostMan_GetAllBloodData_Get.png) 
+![ScreenShot](https://raw.github.com/manan2002sharma/Assignment_net_blood_bank/master/Assignment_net_blood_bank/ScreenShots/Swagger_GetAllBLoodData_get.png)
 <br>
 
 **3. Delete Blood**
@@ -50,6 +56,9 @@ These API provides functionalities for managing blood donor records using in mem
     * **200 OK:** Returns the updated list of blood records (without the deleted record).
     * **404 Not Found:** No blood donor record with the specified ID exists.
     * **400 Bad Request:** Invalid ID format (must be a number).
+    
+![ScreenShot](https://raw.github.com/manan2002sharma/Assignment_net_blood_bank/master/Assignment_net_blood_bank/ScreenShots/Postman_DeleteEndpointWithId_Delete.png) 
+![ScreenShot](https://raw.github.com/manan2002sharma/Assignment_net_blood_bank/master/Assignment_net_blood_bank/ScreenShots/Swagger_DeleteEndpointWithId_delete.png) 
 <br>
 <br>
 
@@ -63,6 +72,9 @@ These API provides functionalities for managing blood donor records using in mem
     * **200 OK:** Returns the blood donor record if found.
     * **404 Not Found:** No blood donor record with the specified ID exists.
     * **400 Bad Request:** Invalid ID format (must be a number).
+    
+![ScreenShot](https://raw.github.com/manan2002sharma/Assignment_net_blood_bank/master/Assignment_net_blood_bank/ScreenShots/PostMan_GetDataById_get.png) 
+![ScreenShot](https://raw.github.com/manan2002sharma/Assignment_net_blood_bank/master/Assignment_net_blood_bank/ScreenShots/Swagger_getDataById_get.png)
 <br>
 <br>
 
@@ -87,6 +99,9 @@ These API provides functionalities for managing blood donor records using in mem
         * Non-positive age.
         * Invalid status value (not "Available", "Requested", or "Expired").
     * **404 Not Found:** No blood donor record with the specified ID exists.
+    
+![ScreenShot](https://raw.github.com/manan2002sharma/Assignment_net_blood_bank/master/Assignment_net_blood_bank/ScreenShots/PostMan_UpdateById_put.png)
+![ScreenShot](https://raw.github.com/manan2002sharma/Assignment_net_blood_bank/master/Assignment_net_blood_bank/ScreenShots/Swagger_UpdateById_Put.png)
 <br>
 <br>
 
@@ -101,6 +116,9 @@ These API provides functionalities for managing blood donor records using in mem
 * **Response:**
     * **200 OK:** Returns a list of blood donor records for the specified page and size.
     * **404 Not Found:** No blood donor records exist in the system.
+
+![ScreenShot](https://raw.github.com/manan2002sharma/Assignment_net_blood_bank/master/Assignment_net_blood_bank/ScreenShots/PostMan_Pagination_get.png) 
+![ScreenShot](https://raw.github.com/manan2002sharma/Assignment_net_blood_bank/master/Assignment_net_blood_bank/ScreenShots/Swagger_pagination_get.png)
 <br>
 <br>
 
@@ -115,6 +133,9 @@ These API provides functionalities for managing blood donor records using in mem
     * **200 OK:** Returns a list of blood donor records matching the blood type.
     * **400 Bad Request:** Invalid blood type format.
     * **404 Not Found:** No blood donor records match the specified blood type.
+
+![ScreenShot](https://raw.github.com/manan2002sharma/Assignment_net_blood_bank/master/Assignment_net_blood_bank/ScreenShots/PostMan_SearchByBloodType_get.png) 
+![ScreenShot](https://raw.github.com/manan2002sharma/Assignment_net_blood_bank/master/Assignment_net_blood_bank/ScreenShots/Swagger_SearchByBloodType_get.png) 
 <br>
 <br>
 
@@ -128,6 +149,9 @@ These API provides functionalities for managing blood donor records using in mem
     * **200 OK:** Returns a list of blood donor records matching the status.
     * **400 Bad Request:** Invalid status value.
     * **404 Not Found:** No blood donor records match the specified status.
+
+![ScreenShot](https://raw.github.com/manan2002sharma/Assignment_net_blood_bank/master/Assignment_net_blood_bank/ScreenShots/PostMan_SearchByStatus_get.png) 
+![ScreenShot](https://raw.github.com/manan2002sharma/Assignment_net_blood_bank/master/Assignment_net_blood_bank/ScreenShots/Swagger_SearchByStatus_get.png) 
 <br>
 <br>
 
@@ -141,6 +165,9 @@ These API provides functionalities for managing blood donor records using in mem
     * **200 OK:** Returns a list of blood donor records matching the donor name.
     * **400 Bad Request:** Empty donor name.
     * **404 Not Found:** No blood donor records match the specified donor name.
+
+![ScreenShot](https://raw.github.com/manan2002sharma/Assignment_net_blood_bank/master/Assignment_net_blood_bank/ScreenShots/Postman_SearchByName_get.png) 
+![ScreenShot](https://raw.github.com/manan2002sharma/Assignment_net_blood_bank/master/Assignment_net_blood_bank/ScreenShots/Swagger_SearchByName_get.png) 
 <br>
 <br>
 
@@ -151,6 +178,9 @@ These API provides functionalities for managing blood donor records using in mem
 * **Response:**
     * **200 OK:** Returns a sorted list of blood donor records.
     * **404 Not Found:** No blood donor records exist in the system.
+
+![ScreenShot](https://raw.github.com/manan2002sharma/Assignment_net_blood_bank/master/Assignment_net_blood_bank/ScreenShots/PostMan_BonusSortByDate_Get.png) 
+![ScreenShot](https://raw.github.com/manan2002sharma/Assignment_net_blood_bank/master/Assignment_net_blood_bank/ScreenShots/Swagger_BonusSortByDate_get.png) 
 <br>
 <br>
 
@@ -161,6 +191,9 @@ These API provides functionalities for managing blood donor records using in mem
 * **Response:**
     * **200 OK:** Returns a sorted list of blood donor records.
     * **404 Not Found:** No blood donor records exist in the system.
+
+![ScreenShot](https://raw.github.com/manan2002sharma/Assignment_net_blood_bank/master/Assignment_net_blood_bank/ScreenShots/PostMan_BonusSortByBloodType_get.png) 
+![ScreenShot](https://raw.github.com/manan2002sharma/Assignment_net_blood_bank/master/Assignment_net_blood_bank/ScreenShots/Swagger_BonusSortByBloodType_get.png)
 <br>
 <br>
 
@@ -177,3 +210,5 @@ These API provides functionalities for managing blood donor records using in mem
     * **400 Bad Request:** Invalid filter parameters.
     * **404 Not Found:** No blood donor records match the filter criteria.
     
+ ![ScreenShot](https://raw.github.com/manan2002sharma/Assignment_net_blood_bank/master/Assignment_net_blood_bank/ScreenShots/PostMan_BonusFilterDataByMultipleParameters_get.png)  
+ ![ScreenShot](https://raw.github.com/manan2002sharma/Assignment_net_blood_bank/master/Assignment_net_blood_bank/ScreenShots/Swagger_BonusFilterDataByMultipleParameter_get.png) 
